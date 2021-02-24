@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variabel dan Tipe Data Javascript</title>
+  </head>
+  <body>
+    <div id="mobil"></div>
+    <div id="nilai"></div>
+    <div id="listMobil"></div>
+    <div id="mobilAvanza"></div>
+
+    <script>
+      var x = 5;
+      var y = 10;
+      console.log(x*y);
+
+      var mobil = "Avanza";
+      console.log(typeof(mobil));
+      document.getElementById("mobil").innerHTML = typeof(mobil);
+      
+      var nilai = 50;
+      console.log(typeof(nilai));
+      document.getElementById("nilai").innerHTML = typeof(nilai);
+      
+      var listMobil = ["Avanza","Agya","Ayla"];
+      console.log(typeof(listMobil));
+      document.getElementById("listMobil").innerHTML = typeof(listMobil);
+      
+      var mobilAvanza = {namaMobil:"Avanza",warna:"putih"};
+      console.log(typeof(mobilAvanza));
+      document.getElementById("mobilAvanza").innerHTML = typeof(mobilAvanza);
+    </script>
+  </body>
+</html>
