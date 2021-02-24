@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Javascript</title>
+  </head>
+  <body>
+    <p id="data"></p>
+    <script>
+      var Mobil = {
+        nama: "Toyota",
+        tipe: "Agya",
+        berat: 600,
+        warna: "putih",
+        maju: function () {
+          return "Mulai Melaju";
+        },
+        mundur: function () {
+          return "Mulai Mundur";
+        },
+      };
+
+      document.getElementById("data").innerHTML =
+        Mobil.nama + " " + Mobil.tipe + " " + Mobil.maju();
+    </script>
+  </body>
+</html>
