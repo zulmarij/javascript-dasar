@@ -61,7 +61,7 @@
       console.log(mobil.concat(mobilNew));
       document.getElementById("arraygabung").innerHTML = mobil.concat(mobilNew);
 
-      //Iterasi Data dari Array dengan For
+      //Iterasi/looping Data dari Array dengan For
       var teks, i;
       teks = "<ul>";
       for (i = 0; i < mobil.length; i++) {
@@ -71,7 +71,7 @@
       console.log(teks);
       document.getElementById("arrayfor").innerHTML = teks;
 
-      //Iterasi Data dari Array dengan .forEach
+      //Iterasi/looping Data dari Array dengan .forEach
       var teks1, j;
       teks1 = "<ul>";
       mobil.forEach(fungsiMobil);
@@ -82,7 +82,7 @@
       console.log(teks1);
       document.getElementById("arrayforeach").innerHTML = teks1;
 
-      //Iterasi menggunakan metode .map
+      //Iterasi/looping menggunakan metode .map
       var nomor1 = [4, 9, 16, 25];
       function kaliDua(value, index, array) {
         return value * 2;
