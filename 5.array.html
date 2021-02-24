@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Javascript</title>
+  </head>
+  <body>
+    <div id="array0"></div>
+    <div id="arrayedit"></div>
+    <div id="arrayhitung"></div>
+    <div id="arrayakhir"></div>
+    <div id="arraystring"></div>
+    <div id="arraystring2"></div>
+    <div id="arraykeluar"></div>
+    <div id="arraymasuk"></div>
+    <div id="arraygabung"></div>
+    <div id="arrayfor"></div>
+    <div id="arrayforeach"></div>
+    <div id="arraymap"></div>
+    <script>
+      var mobil = ["Avanza", "Agya", "Ayla"];
+      var mobilNew = ["Lamborghini", "Fortex"];
+
+      //Mengakses Data Array
+      console.log(mobil[0]);
+      document.getElementById("array0").innerHTML = mobil[0];
+
+      //Mengubah Data Array
+      mobil[0] = "Fortuner";
+      console.log(mobil[0]);
+      document.getElementById("arrayedit").innerHTML = mobil[0];
+
+      //Menghitung Jumlah Array
+      console.log(mobil.length);
+
+      document.getElementById("arrayhitung").innerHTML = mobil.length;
+      //Mengakses Data Array Terakhir
+      console.log(mobil[mobil.length - 1]);
+      document.getElementById("arrayakhir").innerHTML = mobil[mobil.length - 1];
+
+      //Mengubah Array menjadi String
+      console.log(mobil.toString());
+      document.getElementById("arraystring").innerHTML = mobil.toString();
+
+      //Mengubah Array menjadi String 2
+      console.log(mobil.join("*"));
+      document.getElementById("arraystring2").innerHTML = mobil.join("*");
+
+      //Mengeluarkan data dari Array
+      console.log(mobil.pop());
+      document.getElementById("arraykeluar").innerHTML = mobil;
+
+      //Memasukkan data ke Array
+      mobil.push("Dhino");
+      console.log(mobil);
+      document.getElementById("arraymasuk").innerHTML = mobil;
+
+      //Menggabungkan dua Array
+      console.log(mobil.concat(mobilNew));
+      document.getElementById("arraygabung").innerHTML = mobil.concat(mobilNew);
+
+      //Iterasi Data dari Array dengan For
+      var teks, i;
+      teks = "<ul>";
+      for (i = 0; i < mobil.length; i++) {
+        teks += "<li>" + mobil[i] + "</li>";
+      }
+      teks += "</ul>";
+      console.log(teks);
+      document.getElementById("arrayfor").innerHTML = teks;
+
+      //Iterasi Data dari Array dengan .forEach
+      var teks1, j;
+      teks1 = "<ul>";
+      mobil.forEach(fungsiMobil);
+      teks1 += "</ul>";
+      function fungsiMobil(value) {
+        teks1 += "<li>" + value + "</li>";
+      }
+      console.log(teks1);
+      document.getElementById("arrayforeach").innerHTML = teks1;
+
+      //Iterasi menggunakan metode .map
+      var nomor1 = [4, 9, 16, 25];
+      function kaliDua(value, index, array) {
+        return value * 2;
+      }
+      var nomor2 = nomor1.map(kaliDua);
+      console.log(nomor2);
+      document.getElementById("arraymap").innerHTML = nomor2;
+    </script>
+  </body>
+</html>
