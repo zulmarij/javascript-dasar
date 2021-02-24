@@ -11,13 +11,12 @@
     <div id="warna"></div>
     <script>
       var lampu = "hijau";
-      var warna = "hijau";
       switch (lampu) {
         case "merah":
           console.log("case: Lampu nyala warna merah");
           document.getElementById("lampu").innerHTML = "case: Lampu nyala warna merah";
           break;
-        case "kuning":
+          case "kuning":
           console.log("case: Lampu nyala warna kuning");
           document.getElementById("lampu").innerHTML = "case: Lampu nyala warna kuning";
           break;
@@ -30,7 +29,8 @@
           document.getElementById("lampu").innerHTML = "case: Tidak ada warna lampu";
           break;
       }
-
+      
+      var warna = "hijau";
       if (warna == "merah") {
         console.log("if: Warna merah");
         document.getElementById("warna").innerHTML = "if: Warna merah";
